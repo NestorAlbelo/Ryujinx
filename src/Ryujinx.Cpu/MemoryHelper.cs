@@ -19,7 +19,7 @@ namespace Ryujinx.Cpu
                 memory.Write<long>(position + (ulong)offs, 0);
             }
 
-            for (int offs = size8; offs < (size - size8); offs++)
+            for (int offs = size8; offs < size; offs++)
             {
                 memory.Write<byte>(position + (ulong)offs, 0);
             }
